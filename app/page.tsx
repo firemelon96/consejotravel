@@ -7,7 +7,6 @@ import OtherServices from "./components/other-services";
 import TripByLocation from "./components/trip-by-location";
 import Contact from "./components/contact";
 import ReviewsMap from "./components/reviewsMap";
-import Others from "./components/others";
 
 export default function Home() {
   return (

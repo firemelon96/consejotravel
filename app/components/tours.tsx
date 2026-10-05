@@ -1,22 +1,10 @@
-import {
-  getDayTours,
-  getPackageToursByLocation,
-  getServicesByType,
-  getToursByLocation,
-} from "../lib/helpers";
-import { OtherServicesList } from "./other-services-list";
-import { PackageLists } from "./package-lists";
+import { getToursByLocation } from "../lib/helpers";
 import { TourLists } from "./tour-lists";
 
 const Tours = () => {
   const coronTours = getToursByLocation("coron");
   const puertoTours = getToursByLocation("Puerto");
-  const puertoPackage = getPackageToursByLocation("Puerto");
-  const coronPackage = getPackageToursByLocation("coron");
   const elnidoTours = getToursByLocation("el nido");
-  const elnidoPackage = getPackageToursByLocation("el nido");
-  const portBartonTours = getToursByLocation("port barton");
-  const boholTours = getToursByLocation("bohol");
 
   return (
     <section
