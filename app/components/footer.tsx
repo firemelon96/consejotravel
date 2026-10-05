@@ -2,12 +2,13 @@ import Image from "next/image";
 import { BiPhone } from "react-icons/bi";
 import { BsWhatsapp } from "react-icons/bs";
 import { FaFacebook, FaInstagram, FaViber } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
+import { MdEmail, MdMarkEmailRead } from "react-icons/md";
 import { tours } from "../data/tours";
 import Link from "next/link";
 import { RiWhatsappFill } from "react-icons/ri";
 import { PiVibrateFill } from "react-icons/pi";
 import { SiViber } from "react-icons/si";
+import { EmailIcon } from "react-share";
 
 const Footer = () => {
   return (
@@ -22,7 +23,7 @@ const Footer = () => {
               alt="consejo travel logo"
             />
           </div>
-          <div className="text-slate-500">
+          <div>
             <h6 className="text-orange text-2xl font-semibold">consejo</h6>
             <span className="text-orange text-xl font-medium">
               Travel and Tours
@@ -39,14 +40,14 @@ const Footer = () => {
           </span>
           {/* TODO: Add proper links to this list */}
           <ul className="text-orange/70 flex flex-col items-center text-base md:items-start">
-            <li className="flex items-center space-x-2">
+            {/* <li className="flex items-center space-x-2">
               <RiWhatsappFill /> <span>0955-294-6691</span>
             </li>
             <li className="flex items-center space-x-2">
               <SiViber /> <span>0955-294-6691</span>
-            </li>
+            </li> */}
             <li className="flex items-center space-x-2">
-              <BiPhone /> <span>0917-302-8053</span>
+              <MdMarkEmailRead /> <span>consejotravelandtours@gmail.com</span>
             </li>
             <li className="flex items-center space-x-2">
               <FaFacebook />{" "}
@@ -71,10 +72,6 @@ const Footer = () => {
             ))}
           </ul>
         </div>
-      </div>
-      <div className="flex flex-col items-center border-t border-sky-300 py-2 text-sm text-slate-500">
-        <p> &copy; Copyright 2024. All Rights Reserved.</p>
-        <span>Design and developed by: Almujahid Jamion</span>
       </div>
     </footer>
   );

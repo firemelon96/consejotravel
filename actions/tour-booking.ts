@@ -35,12 +35,9 @@ export const BookTour = async (values: FieldValues) => {
 
   try {
     const { data, error } = await resend.emails.send({
-      from: "consejo Travel and Tours <sales@clarkkenttravelandtours.com>",
+      from: "consejo Travel and Tours <consejotravelandtours@gmail.com>",
       to: [email],
-      cc: [
-        "sales@clarkkenttravelandtours.com",
-        "info.clarkkenttravelandtours@yahoo.com",
-      ],
+      cc: ["consejotravelandtours@gmail.com"],
       replyTo: email,
       subject: title!,
       react: TourEmailTemplate({
