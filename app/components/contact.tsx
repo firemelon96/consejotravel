@@ -19,18 +19,10 @@ const Contact = () => {
                 <p className="text-orange-400">Message us</p>
               </div>
               <a
-                target="_blank"
-                href={`https://wa.me/639552946691?text=I'm%20interested%20in%20your%20tour%20booking`}
+                type="tel"
                 className="flex w-full items-center justify-center gap-3 border p-4 text-3xl text-emerald-500"
               >
-                <BsWhatsapp /> Chat on Whatsapp
-              </a>
-              <a
-                target="_blank"
-                href={`https://m.me/${fbPageId}?text=I'm%20interested%20in%20your%20tour%20booking`}
-                className="flex w-full items-center justify-center gap-3 border p-4 text-3xl text-sky-500"
-              >
-                <BsMessenger /> Messenger
+                (+63)919-296-8188
               </a>
             </div>
           </div>
